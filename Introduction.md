@@ -16,5 +16,3 @@ If you're a new player, see [the HAG Adventurer Manual](HAM.md).
 If you're a new HAG master, see [the Master's Assistive Publication](MAP.md).
 
 If you're just looking for a reference, the [index](Index.md).
-
-
