@@ -8,7 +8,7 @@ header_1_idx=1
 max_header_lvl=1
 prev_header_lvl=1
 
-echo "$titles" | sort -d | while read -r line; do
+echo "$titles" | sort --version-sort | while read -r line; do
 		file=$(echo "$line" | cut -d':' -f1)
 		header=$(echo "$line" | cut -d':' -f2)
 		
