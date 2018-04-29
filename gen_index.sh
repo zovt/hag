@@ -25,7 +25,7 @@ echo "$titles" | sort -d | while read -r line; do
 				eval $(echo "header_"$header_lvl"_idx=1")
 		fi
 
-		spaces=$(seq 1 $((($header_lvl - 1) * 2)) | sed 's/.*/\ /' | tr -d '\n')
+		spaces=$(seq 1 $((($header_lvl - 1) * 4)) | sed 's/.*/\ /' | tr -d '\n')
 		header_clean=$(echo $header | sed 's/#\+ \?//')
 		anchor=$(echo $header_clean \
 								 | tr ':[A-Z]:' ':[a-z]' \
