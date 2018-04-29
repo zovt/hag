@@ -11,7 +11,7 @@ prev_header_lvl=1
 echo "$titles" | sort --version-sort | while read -r line; do
 		file=$(echo "$line" | cut -d':' -f1)
 		header=$(echo "$line" | cut -d':' -f2)
-		
+
 		header_lvl=$(echo "$header" | tr -cd '#' | wc -c)
 		if [ $header_lvl -lt $prev_header_lvl ]; then
 				for i in $(seq 2 $max_header_lvl); do
@@ -32,7 +32,7 @@ echo "$titles" | sort --version-sort | while read -r line; do
 								 | tr ' ' '-' \
 								 | tr -cd '[[:alnum:]-_]'
 					)
-		
+
 		header_lvl_str=$(echo "\$header_"$header_lvl"_idx")
 		header_idx=$(eval echo $header_lvl_str)
 
